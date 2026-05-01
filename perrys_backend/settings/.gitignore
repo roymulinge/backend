@@ -1,0 +1,102 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.pid
+*.pot
+*.mo
+db.sqlite3
+*.db
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Virtual environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.production
+
+# Database (PostgreSQL local dumps)
+*.sql
+*.dump
+
+# Static / media files (collected by Django)
+staticfiles/
+static/
+media/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.svg
+*.mp4
+*.mp3
+*.webp
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.user
+*.sln
+*.csproj
+*.tmp
+
+# Node / React (frontend)
+frontend/react-app/node_modules/
+frontend/react-app/.env.local
+frontend/react-app/.env.development.local
+frontend/react-app/.env.test.local
+frontend/react-app/.env.production.local
+frontend/react-app/build/
+frontend/react-app/.vite/
+frontend/react-app/dist/
+
+# Logs
+*.log
+logs/
+*.pid
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing
+.pytest_cache/
+*.coverage
+coverage.xml
+.tox/
+
+# Docker (if you later use it)
+.dockerignore
+docker-compose.override.yml
+
+# Miscellaneous
+*.bak
+*.orig
+*.tmp
+*.temp
