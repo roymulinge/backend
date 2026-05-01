@@ -9,6 +9,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique = True)
     username =models.CharField(max_length=150, unique=True, blank=True, null=True)
     phone_number =models.CharField(max_length=15, blank=True, default='')
+    phone_number_provided = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(default=timezone.now)
