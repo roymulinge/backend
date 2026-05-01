@@ -60,13 +60,13 @@ AUTHENTICATION_BACKENDS =[
 ]
 
 #Tell alluth how to communicate with backend 
-ACCOUNT_USER_MODEL_USERNAME_FIELD =None
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD ='email'
+ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']
+ACCOUNT_LOGIN_METHODS = {'email'}
 ACCOUNT_EMAIL_REQUIRES = True
 ACCOUNT_EMAIL_VERIFICATION ='mandatory'
-ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
-ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 300 #Lockout for 5 minutes
+AACOUNT_RATE_LIMITS = {
+    'login_failed': '5,300s'
+}
 
 #Google OAuth need keys set in .env
 
